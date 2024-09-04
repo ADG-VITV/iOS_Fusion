@@ -19,12 +19,12 @@ export default function Home() {
         <LandingPageMobile />
       </div>
       <Description />
-      {/* <Speakers />
+      <Speakers />
       <Timeline />
       <Partners />
       <FAQ />
       <Footer />
-      <ScrollTop /> */}
+      <ScrollTop />
     </>
   );
 }
