@@ -8,25 +8,25 @@ export default function Navbar() {
         </a>
       </p>
       <p className="relative group">
-        <a href="#" className="inline-block">
+        <a href="#about" className="inline-block">
               About
         <span className="block h-0.5 bg-violet-500 max-w-0 group-hover:max-w-full transition-all duration-500"></span>
         </a>
       </p>
       <p className="relative group">
-        <a href="#" className="inline-block">
+        <a href="#speakers" className="inline-block">
               Speakers
         <span className="block h-0.5 bg-violet-500 max-w-0 group-hover:max-w-full transition-all duration-500"></span>
         </a>
       </p>
       <p className="relative group">
-        <a href="#" className="inline-block">
+        <a href="#partners" className="inline-block">
              Partners
         <span className="block h-0.5 bg-violet-500 max-w-0 group-hover:max-w-full transition-all duration-500"></span>
         </a>
       </p>
       <p className="relative group">
-        <a href="#" className="inline-block">
+        <a href="#faq" className="inline-block">
              FAQ
         <span className="block h-0.5 bg-violet-500 max-w-0 group-hover:max-w-full transition-all duration-500"></span>
         </a>
