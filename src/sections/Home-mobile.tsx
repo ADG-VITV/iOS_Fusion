@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar-mobile";
 export default function Home() {
   return (
     <>
-      <main className="bg-[#1A1A1A] h-[100vh]">
-        <div className="p-4">
+      <main className="bg-black h-[100vh]">
+        <div className="p-4 h-full overflow-hidden">
           <nav className="flex justify-between">
             <Image
               className="w-[6rem]"
