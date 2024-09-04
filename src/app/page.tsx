@@ -1,5 +1,6 @@
 import React from "react";
 import LandingPage from "@/sections/Home";
+import LandingPageMobile from "@/sections/Home-mobile";
 import Description from "@/sections/Description";
 import Speakers from "@/sections/Speakers";
 import Timeline from "@/sections/Timeline";
@@ -14,13 +15,16 @@ export default function Home() {
       <div className="hidden md:block">
         <LandingPage />
       </div>
+      <div className="sm:hidden">
+        <LandingPageMobile />
+      </div>
       <Description />
-      <Speakers />
-      {/* <Timeline /> */}
+      {/* <Speakers />
+      <Timeline />
       <Partners />
       <FAQ />
       <Footer />
-      <ScrollTop />
+      <ScrollTop /> */}
     </>
   );
 }

@@ -1,4 +1,3 @@
-// components/CountdownTimer.tsx
 "use client";
 import { useState, useEffect } from "react";
 
@@ -10,7 +9,7 @@ interface TimeLeft {
 }
 
 interface CountdownTimerProps {
-  targetDate: string; // ISO string format, e.g., '2024-12-31T23:59:59'
+  targetDate: string;
 }
 
 const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
@@ -46,7 +45,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex gap-8 text-7xl font-bold text-[#747281]">
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-5xl sm:text-7xl font-bold text-[#747281]">
       <div>{timeLeft.days}d</div>
       <div>{timeLeft.hours}h </div>
       <div>{timeLeft.minutes}m</div>
