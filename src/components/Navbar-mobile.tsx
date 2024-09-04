@@ -47,29 +47,29 @@ export default function NavbarMobile() {
       </button>
       <div
         ref={menuRef}
-        className={`fixed right-0 w-[60vw] h-full z-10 top-0 bg-[#5F2EEA] text-white text-2xl transition-all ease-in-out duration-300 transform ${
+        className={`fixed right-0 w-[50vw] h-full z-30 top-0 bg-[#5F2EEA] text-white text-xl transition-all ease-in-out duration-300 transform ${
           isMenuOpen && isAnimating
             ? "translate-x-0 opacity-100"
             : "translate-x-full opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col justify-center w-full">
-          <a href="#" className="p-4" onClick={handleLinkClick}>
+        <div className="flex flex-col gap-3 justify-center w-full px-6 py-6 ">
+          <a href="#" className="p-2" onClick={handleLinkClick}>
             HOME
           </a>
-          <a href="#about" className="p-4" onClick={handleLinkClick}>
+          <a href="#about" className="p-2" onClick={handleLinkClick}>
             ABOUT
           </a>
-          <a href="#speakers" className="p-4" onClick={handleLinkClick}>
+          <a href="#speakers" className="p-2" onClick={handleLinkClick}>
             SPEAKERS
           </a>
-          <a href="#timeline" className="p-4" onClick={handleLinkClick}>
+          <a href="#timeline" className="p-2" onClick={handleLinkClick}>
             TIMELINE
           </a>
-          <a href="#partners" className="p-4" onClick={handleLinkClick}>
+          <a href="#partners" className="p-2" onClick={handleLinkClick}>
             PARTNERS
           </a>
-          <a href="#faq" className="p-4" onClick={handleLinkClick}>
+          <a href="#faq" className="p-2" onClick={handleLinkClick}>
             FAQ
           </a>
         </div>

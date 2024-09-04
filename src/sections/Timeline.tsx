@@ -39,20 +39,44 @@ export default function Timeline() {
   return (
     <section
       id="timeline"
-      className="px-32 py-16 bg-black h-[100vh] text-white"
+      className="px-8 py-8 sm:px-32 sm:py-16 bg-black h-[100vh] text-white"
     >
-      <h1 className="text-5xl font-bold m-4">TIMELINE</h1>
-      <div className="flex justify-center mx-auto w-[80%] h-full">
-        <div className="flex flex-col w-[30%] text-5xl justify-around items-center font-bold">
-          <div>
+      <h1 className="text-3xl sm:text-5xl font-bold sm:m-4">TIMELINE</h1>
+      <div className="flex sm:mx-auto sm:w-[80%] h-full">
+        <div className="flex flex-col w-full text-2xl sm:text-5xl justify-around items-center font-bold">
+          <div className="flex w-full justify-between">
             <h1>DAY 1</h1>
+            <div className="flex flex-col gap-4 mb-5">
+              <Event
+                key={0}
+                onClick={() => handleClick(3)}
+                className={`flex flex-col ${getBackgroundColor(0)}`}
+              />
+              <Event
+                key={1}
+                onClick={() => handleClick(2)}
+                className={`flex flex-col ${getBackgroundColor(1)}`}
+              />
+            </div>
           </div>
-          <div>
+          <div className="flex w-full justify-between">
             <h1>DAY 2</h1>
+            <div className="flex flex-col gap-4 mb-5">
+              <Event
+                key={0}
+                onClick={() => handleClick(3)}
+                className={`flex flex-col ${getBackgroundColor(0)}`}
+              />
+              <Event
+                key={1}
+                onClick={() => handleClick(2)}
+                className={`flex flex-col ${getBackgroundColor(1)}`}
+              />
+            </div>
           </div>
         </div>
 
-        <div className="h-full flex justify-center  mt-[5rem] rotate-0">
+        {/* <div className="h-full flex justify-center  mt-[5rem] rotate-0">
           <Slider
               value={range}
               onChange={handleRangeChange}
@@ -68,9 +92,9 @@ export default function Timeline() {
                 color: '#5f37b0',
               }}
             />
-        </div>
+        </div> */}
 
-        <div className="w-[60%] gap-8 justify-center items-center flex flex-col p-12">
+        {/* <div className="w-[60%] gap-8 justify-center items-center flex flex-col p-12">
           <div className="flex flex-col gap-4 mb-5">
             <Event
               key={0}
@@ -96,7 +120,7 @@ export default function Timeline() {
               className={`flex flex-col ${getBackgroundColor(3)}`}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
