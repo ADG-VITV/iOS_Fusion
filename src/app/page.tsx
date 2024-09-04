@@ -15,7 +15,7 @@ export default function Home() {
       <div className="hidden md:block">
         <LandingPage />
       </div>
-      <div className="sm:hidden">
+      <div className="md:hidden">
         <LandingPageMobile />
       </div>
       <Description />
