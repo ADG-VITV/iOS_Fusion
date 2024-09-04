@@ -1,9 +1,9 @@
 import Image from "next/image";
 export default function Speakers() {
   return (
-    <section id="speakers" className="h-[100vh] bg-[#1A1A1A] text-white px-32 py-20">
+    <section id="speakers" className="md:h-[100vh] bg-[#1A1A1A] text-white md:px-32 md:py-20 p-10">
       <h1 className="text-5xl font-bold m-4">SPEAKERS</h1>
-      <div className="flex justify-between my-8 gap-16">
+      <div className="flex justify-between my-8 gap-16 md:flex-row flex-col-reverse">
         <div className="flex gap-8 items-center">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
@@ -11,8 +11,8 @@ export default function Speakers() {
             odit at excepturi quidem ducimus, impedit veritatis!
           </p>
           <Image
-            className="h-[25rem] mt-[5rem]"
-            src="/iphone-black.png"
+            className="mt-[5rem] md:h-[26rem] h-[20rem]"
+            src="/iphone.png"
             alt="speaker1"
             width={500}
             height={500}
@@ -20,8 +20,8 @@ export default function Speakers() {
         </div>
         <div className="flex gap-8 items-center">
           <Image
-            className="h-[25rem]"
-            src="/iphone-black.png"
+            className="md:h-[26rem] h-[20rem]"
+            src="/iphone.png"
             alt="speaker2"
             width={500}
             height={500}

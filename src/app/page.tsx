@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <Description />
       <Speakers />
-      <Timeline />
+      {/* <Timeline /> */}
       <Partners />
       <FAQ />
       <Footer />

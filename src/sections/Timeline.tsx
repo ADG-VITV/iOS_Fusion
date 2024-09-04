@@ -35,23 +35,7 @@ export default function Timeline() {
         break;
     }
   };
-  // const sliderRef = useRef<HTMLInputElement | null>(null);
 
-  // useEffect(() => {
-  //   const slider = sliderRef.current;
-
-  //   if (slider) {
-  //     const handleInput = () => {
-  //       slider.style.transition = "all 0.5s ease";
-  //     };
-
-  //     slider.addEventListener("input", handleInput);
-
-  //     return () => {
-  //       slider.removeEventListener("input", handleInput);
-  //     };
-  //   }
-  // }, []);
   return (
     <section
       id="timeline"
@@ -82,7 +66,6 @@ export default function Timeline() {
                 width: 10, 
                 height: '65%', 
                 color: '#5f37b0',
-
               }}
             />
         </div>
@@ -91,25 +74,25 @@ export default function Timeline() {
           <div className="flex flex-col gap-4 mb-5">
             <Event
               key={0}
-              onClick={() => handleClick(0)}
+              onClick={() => handleClick(3)}
               className={`flex flex-col ${getBackgroundColor(0)}`}
 
             />
             <Event
               key={1}
-              onClick={() => handleClick(1)}
+              onClick={() => handleClick(2)}
               className={`flex flex-col ${getBackgroundColor(1)}`}
             />
           </div>
           <div className="flex flex-col gap-4 mb-4">
             <Event
               key={2}
-              onClick={() => handleClick(2)}
+              onClick={() => handleClick(1)}
               className={`flex flex-col ${getBackgroundColor(2)}`}
             />
             <Event
               key={3}
-              onClick={() => handleClick(3)}
+              onClick={() => handleClick(0)}
               className={`flex flex-col ${getBackgroundColor(3)}`}
             />
           </div>
