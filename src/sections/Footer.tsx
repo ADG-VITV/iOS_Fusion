@@ -13,7 +13,8 @@ export default function Footer() {
     <section className="bg-[#1A1A1A] text-white md:px-32 md:py-4 p-8">
       <div className="md:flex md:flex-row justify-between items-center sm:m-8">
         <div className="w-[10rem] mb-6 rounded-full ">
-            <Image src="/IOSF.png" alt="adg" width={500} height={500} />
+            <img className="w-[10rem]" src="/IOSF.png" alt="adg" />
+            
         </div>
         <div className="md:w-[20%] w-[80%] mb-6">
           <p className="text-[#5F2EEA] font-bold mb-2">Quick Links</p>
