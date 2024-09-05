@@ -12,16 +12,19 @@ export default function Footer() {
   return (
     <section className="bg-[#1A1A1A] text-white md:px-32 md:py-4 p-6">
       <div className="md:flex md:flex-row justify-between items-center m-8">
-        <div className="w-[10rem] mb-6">
-            <Image src="/adglogo.png" alt="adg" width={500} height={500} />
+        <div className="w-[10rem] mb-6 rounded-full ">
+            <Image src="/logoonly-Photoroom.png" alt="adg" width={500} height={500} />
         </div>
         <div className="md:w-[20%] w-[80%] mb-6">
           <p className="text-[#5F2EEA] font-bold mb-2">Quick Links</p>
           <div className="flex justify-between">
             <div>
+              <div className="relative group">
               <p>
                 <a href="" className="hover:text-gray-400 transition-all">Events</a>
+               
               </p>
+              </div>
               <p>
                 <a href="" className="hover:text-gray-400 transition-all">Projects</a>
               </p>
@@ -54,7 +57,7 @@ export default function Footer() {
             <a href="" className="hover:text-gray-400 transition-all">
               <FaLinkedin />
             </a>
-            <a href="" className="hover:text-gray-400 transition-all">
+            <a href="https://www.instagram.com/adgvit/"  target='_blank'className="hover:text-gray-400 transition-all">
               <FaInstagram />
             </a>
           </div>

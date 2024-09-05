@@ -2,7 +2,12 @@
 import { useState, useRef, useEffect } from "react";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 
-export default function Question() {
+type QuestionProps = {
+  ques: string;
+  ans:string
+};
+
+export default function Question({ques, ans}: QuestionProps) {
   const [isOpen, setIsOpen] = useState(false);
   const questionRef = useRef(null);
   const contentRef = useRef(null);
@@ -47,9 +52,7 @@ export default function Question() {
         onClick={toggle}
         className="h-16 md:h-[3rem] items-center justify-between flex p-4 cursor-pointer"
       >
-        <p className="text-[0.9rem] md:text-[1rem]">
-          Will OD's be given for the event?
-        </p>
+        <p className="text-[0.9rem] md:text-[1rem]">{ques}</p>
         <p className="text-2xl">
           {isOpen ? (
             <MdKeyboardArrowDown className="transition-all duration-300 [transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1)]" />
@@ -68,7 +71,7 @@ export default function Question() {
         className="transition-all duration-300 ease-in"
       >
         <hr className="mx-4 text-center" />
-        <p className="mx-4 md:my-3 my-5">Yes</p>
+        <p className="mx-4 md:my-3 my-5">{ans}</p>
       </div>
     </div>
   );
