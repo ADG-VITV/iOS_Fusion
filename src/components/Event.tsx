@@ -3,9 +3,12 @@ interface EventProps {
   className?: string;
   onClick?: () => void;
   style?: React.CSSProperties;
+  event: string,
+  time: string, 
+  venue: string
 }
 
-export default function Event({ className, onClick, style}: EventProps) {
+export default function Event({ className, onClick, style, event, time, venue}: EventProps) {
   return (
     <div
       onClick={onClick}
@@ -14,9 +17,9 @@ export default function Event({ className, onClick, style}: EventProps) {
         transition: "background-color 0.3s ease-in-out", 
       }}
     >
-      <h1 className="text-sm sm:text-base">EVENT 1 : iOS FUSION INTRO</h1>
-      <p className="text-xs text-[#9f82f1]">9:00AM - 10:30AM</p>
-      <p className="text-xs text-gray-400">ANNA AUDITORIUM</p>
+      <h1 className="text-sm sm:text-base">{event}</h1>
+      <p className="text-xs text-[#9f82f1]">{time}</p>
+      <p className="text-xs text-gray-400">{venue}</p>
     </div>
   );
 }

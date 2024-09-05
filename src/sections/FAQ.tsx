@@ -7,10 +7,10 @@ export default function FAQ() {
       <div className="flex flex-col gap-8 m-4">
         <Question ques='1. What is the team size for the Appathon?'  ans='1-3'/>
         <Question ques ="2. Do we need any prerequisite knowledge?" ans="No, but it's great if you know a bit"/>
-        <Question ques = '3. Will OD be given during the course of the Appathon?' ans='Yes'/>
+        <Question ques = '3. Will OD be given during the course of the Appathon?' ans='The event is held on holdiays. No worries for OD'/>
+        {/* <Question ques= '' ans=''/>
         <Question ques= '' ans=''/>
-        <Question ques= '' ans=''/>
-        <Question ques = '' ans=''/>
+        <Question ques = '' ans=''/> */}
       </div>
     </section>
   );

@@ -23,16 +23,15 @@ export default function Home() {
               <p className="text-4xl font-bold my-4">FUSION 7.0 </p>
             </div>
             <p className="text-sm text-gray-400 sm:mt-8">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              error vel optio vitae alias corporis quas libero nobis fugiat
-              animi, provident quasi veniam quod. Laudantium!
+            iOS Fusion 7.0: Where the future of app development unfolds. Experience the power to innovate like never before, pushing the limits of iOS technology and unlocking a world of possibilities.
             </p>
             <div className="flex my-4 mx-0 z-10 text-xs">
               <button className="w-[10rem] h-[2rem] shadow-md bg-[#5F2EEA] border-0 rounded-full mr-4">
-                EXPLORE
+              <a target="_blank" href="https://gravitas.vit.ac.in">REGISTER</a>
+                
               </button>
               <button className="w-[10rem] h-[2rem] shadow-md border rounded-full mr-4">
-                ADD TO CALENDAR
+              <a target="_blank" href="https://instagram.com/adgvit">REACH OUT</a>
               </button>
             </div>
           </div>
