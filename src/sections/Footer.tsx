@@ -22,29 +22,28 @@ export default function Footer() {
             <div>
               <div className="relative group">
               <p>
-                <a href="" className="hover:text-gray-400 transition-all">Events</a>
-               
+                <a href="https://adgvit.in" className="hover:text-gray-400 transition-all">Events</a>
               </p>
               </div>
               <p>
-                <a href="" className="hover:text-gray-400 transition-all">Projects</a>
+                <a href="https://adgvit.in" className="hover:text-gray-400 transition-all">Projects</a>
               </p>
               <p>
-                <a href="" className="hover:text-gray-400 transition-all">Domains</a>
+                <a href="https://adgvit.in" className="hover:text-gray-400 transition-all">Domains</a>
               </p>
               <p>
-                <a href="" className="hover:text-gray-400 transition-all">Partners</a>
+                <a href="https://adgvit.in" className="hover:text-gray-400 transition-all">Partners</a>
               </p>
             </div>
             <div>
               <p>
-                <a href="" className="hover:text-gray-400 transition-all">Team</a>
+                <a href="https://adgvit.in" className="hover:text-gray-400 transition-all">Team</a>
               </p>
               <p>
-                <a href="" className="hover:text-gray-400 transition-all">Contact Us</a>
+                <a href="https://adgvit.in" className="hover:text-gray-400 transition-all">Contact Us</a>
               </p>
               <p>
-                <a href="" className="hover:text-gray-400 transition-all">About Us</a>
+                <a href="https://adgvit.in" className="hover:text-gray-400 transition-all">About Us</a>
               </p>
             </div>
           </div>
@@ -52,30 +51,18 @@ export default function Footer() {
         <div>
           <p className="text-[#5F2EEA] font-bold">Follow Us</p>
           <div className="flex justify-between gap-4 text-3xl my-4">
-            <a href="" className="hover:text-gray-400 transition-all">
-              <FaFacebook />
-            </a>
-            <a href="" className="hover:text-gray-400 transition-all">
-              <FaLinkedin />
-            </a>
             <a href="https://www.instagram.com/adgvit/"  target='_blank'className="hover:text-gray-400 transition-all">
               <FaInstagram />
             </a>
-          </div>
-          <div className="flex justify-between gap-4 text-3xl my-4">
-            <a href="" className="hover:text-gray-400 transition-all">
+            <a href="https://www.linkedin.com/company/adgvit" className="hover:text-gray-400 transition-all">
+              <FaLinkedin />
+            </a>
+            <a href="https://x.com/adgvit" className="hover:text-gray-400 transition-all">
               <FaXTwitter />
-            </a>
-            <a href="" className="hover:text-gray-400 transition-all">
-              <FaGithub />
-            </a>
-            <a href="" className="hover:text-gray-400 transition-all">
-              <FaYoutube />
             </a>
           </div>
         </div>
       </div>
-
       <hr />
       <p className="text-center m-8">
         Developed by ADG | &copy; 2024 All rights reserved.
