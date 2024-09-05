@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <section className="bg-[#1A1A1A] text-white md:px-32 md:py-4 p-6">
-      <div className="md:flex md:flex-row justify-between items-center m-8">
+      <div className="md:flex md:flex-row justify-between items-center sm:m-8">
         <div className="w-[10rem] mb-6 rounded-full ">
             <Image src="/logoonly-Photoroom.png" alt="adg" width={500} height={500} />
         </div>
