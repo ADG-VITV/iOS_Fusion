@@ -43,7 +43,7 @@ export default function Timeline() {
     >
       <h1 className="text-3xl sm:text-5xl font-bold sm:m-4">TIMELINE</h1>
       <div className="flex sm:mx-auto sm:w-[80%] h-full">
-        <div className="flex flex-col w-full text-2xl sm:text-5xl justify-around items-center font-bold">
+        <div className="flex flex-col w-full text-2xl sm:text-5xl gap-8 my-12 items-center font-bold">
           <div className="flex w-full justify-between">
             <h1>DAY 1</h1>
             <div className="flex flex-col gap-4 mb-5">
@@ -63,14 +63,14 @@ export default function Timeline() {
             <h1>DAY 2</h1>
             <div className="flex flex-col gap-4 mb-5">
               <Event
-                key={0}
-                onClick={() => handleClick(3)}
-                className={`flex flex-col ${getBackgroundColor(0)}`}
+                key={2}
+                onClick={() => handleClick(1)}
+                className={`flex flex-col ${getBackgroundColor(2)}`}
               />
               <Event
-                key={1}
-                onClick={() => handleClick(2)}
-                className={`flex flex-col ${getBackgroundColor(1)}`}
+                key={3}
+                onClick={() => handleClick(0)}
+                className={`flex flex-col ${getBackgroundColor(3)}`}
               />
             </div>
           </div>

@@ -19,14 +19,37 @@ export default function Question() {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    // Function to handle clicks outside the component
+    const handleClickOutside = (event) => {
+      if (questionRef.current && !questionRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    // Add event listener for clicks
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up event listener on component unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className={`border rounded-lg sm:w-[80%] w-[100%] ${isOpen ? 'bg-[#5F2EEA] border-[#5F2EEA]' : ''}`}>
+    <div
+      ref={questionRef}
+      className={`border rounded-lg sm:w-[80%] w-[100%] ${
+        isOpen ? "bg-[#5F2EEA] border-[#5F2EEA]" : ""
+      }`}
+    >
       <div
-        ref={questionRef}
         onClick={toggle}
         className="h-16 md:h-[3rem] items-center justify-between flex p-4 cursor-pointer"
       >
-        <p className="text-[0.9rem] md:text-[1rem]">Will OD's be given for the event?</p>
+        <p className="text-[0.9rem] md:text-[1rem]">
+          Will OD's be given for the event?
+        </p>
         <p className="text-2xl">
           {isOpen ? (
             <MdKeyboardArrowDown className="transition-all duration-300 [transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1)]" />

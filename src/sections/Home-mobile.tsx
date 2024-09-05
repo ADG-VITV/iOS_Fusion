@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <main className="bg-black h-[100vh]">
-        <div className="p-4 h-full overflow-hidden">
+        <div className="p-4 h-full">
           <nav className="flex justify-between">
             <Image
               className="w-[6rem]"
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         <div className="">
           <Image
-            className="object-cover absolute w-full bottom-0 z-20"
+            className="absolute bottom-0 z-20"
             src="/ADG-mobile.png"
             alt="ADG"
             width={500}
