@@ -10,7 +10,7 @@ export default function Home() {
           <nav className="flex justify-between">
             <Image
               className="w-[6rem]"
-              src="raw.githubusercontent.com"
+              src="https://raw.githubusercontent.com/satyamdwivedi7/Images/main/iOSF.png"
               width={500}
               height={500}
               alt="Landing page"
