@@ -8,9 +8,11 @@ export default function Home() {
       <main className="bg-black h-[100vh]">
         <div className="p-4 h-full">
           <nav className="flex justify-between">
-            <img
+            <Image
               className="w-[6rem]"
-              src="/IOSF.png"
+              src="raw.githubusercontent.com"
+              width={500}
+              height={500}
               alt="Landing page"
             />
             <Navbar />
