@@ -10,7 +10,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <section className="bg-[#1A1A1A] text-white md:px-32 md:py-4 p-6">
+    <section className="bg-[#1A1A1A] text-white md:px-32 md:py-4 p-8">
       <div className="md:flex md:flex-row justify-between items-center sm:m-8">
         <div className="w-[10rem] mb-6 rounded-full ">
             <Image src="/logoonly-Photoroom.png" alt="adg" width={500} height={500} />
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-[#5F2EEA] font-bold">Follow Us</p>
-          <div className="flex justify-between gap-4 text-3xl my-2">
+          <div className="flex justify-between gap-4 text-3xl my-4">
             <a href="" className="hover:text-gray-400 transition-all">
               <FaFacebook />
             </a>
@@ -61,7 +61,7 @@ export default function Footer() {
               <FaInstagram />
             </a>
           </div>
-          <div className="flex justify-between gap-4 text-3xl my-2">
+          <div className="flex justify-between gap-4 text-3xl my-4">
             <a href="" className="hover:text-gray-400 transition-all">
               <FaXTwitter />
             </a>

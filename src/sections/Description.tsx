@@ -2,7 +2,7 @@ export default function Description() {
     return (
       <section
         id="about"
-        className="sm:h-[100vh] bg-black flex flex-col justify-center items-center"
+        className="lg:h-[100vh] bg-black flex flex-col justify-center items-center"
       >
         <div className="flex flex-col items-center sm:hidden text-white m-6">
           <p className="text-4xl ">
@@ -10,7 +10,7 @@ export default function Description() {
           </p>
           <p className="text-gray-400">CREATE.IDEATE.INNOVATE</p>
         </div>
-        <div className="w-[90%] m-4 sm:m-auto sm:w-[75%] sm:h-[60%] bg-[#1A1A1A] text-white sm:p-16 text-center rounded-xl ">
+        <div className="w-[90%] m-4 sm:m-8 sm:w-[75%] sm:h-[60%] bg-[#1A1A1A] text-white sm:p-16 text-center rounded-xl ">
           <div className=" flex-col hidden sm:flex items-center">
             <p className="sm:text-4xl ">
               <span className="text-[#5F2EEA]">iOS</span> FUSION

@@ -39,12 +39,12 @@ export default function Timeline() {
   return (
     <section
       id="timeline"
-      className="px-8 py-8 sm:px-32 sm:py-16 bg-black h-[100vh] text-white"
+      className="px-6 py-8 lg:px-32 lg:py-16 bg-black text-white"
     >
-      <h1 className="text-3xl sm:text-5xl font-bold sm:m-4">TIMELINE</h1>
-      <div className="flex sm:mx-auto sm:w-[80%] h-full">
-        <div className="flex flex-col w-full text-2xl sm:text-5xl gap-8 my-12 items-center font-bold">
-          <div className="flex w-full justify-between">
+      <h1 className="text-3xl lg:text-5xl font-bold lg:m-4">TIMELINE</h1>
+      <div className="flex lg:mx-auto h-full">
+        <div className="flex flex-col w-full text-2xl lg:text-5xl gap-8 my-12 items-center font-bold relative">
+          <div className="flex w-full justify-between lg:justify-evenly">
             <h1>DAY 1</h1>
             <div className="flex flex-col gap-4 mb-5">
               <Event
@@ -59,9 +59,9 @@ export default function Timeline() {
               />
             </div>
           </div>
-          <div className="flex w-full justify-between">
+          <div className="flex w-full justify-between lg:justify-evenly">
             <h1>DAY 2</h1>
-            <div className="flex flex-col gap-4 mb-5">
+            <div className="flex flex-col gap-4">
               <Event
                 key={2}
                 onClick={() => handleClick(1)}
@@ -73,26 +73,24 @@ export default function Timeline() {
                 className={`flex flex-col ${getBackgroundColor(3)}`}
               />
             </div>
+            <div className="h-full flex justify-center items-center absolute top-0 left-[18%] lg:left-[35%] rotate-0">
+              <Slider
+                value={range}
+                onChange={handleRangeChange}
+                aria-labelledby="range-slider"
+                min={0}
+                max={100}
+                track="inverted"
+                orientation="vertical"
+                sx={{
+                  width: 8,
+                  height: "100%",
+                  color: "#5f37b0",
+                }}
+              />
+            </div>
           </div>
         </div>
-
-        {/* <div className="h-full flex justify-center  mt-[5rem] rotate-0">
-          <Slider
-              value={range}
-              onChange={handleRangeChange}
-              aria-labelledby="range-slider"
-              min={0}
-              max={100}
-              track="inverted"
-              orientation="vertical"
-              
-              sx={{
-                width: 10, 
-                height: '65%', 
-                color: '#5f37b0',
-              }}
-            />
-        </div> */}
 
         {/* <div className="w-[60%] gap-8 justify-center items-center flex flex-col p-12">
           <div className="flex flex-col gap-4 mb-5">

@@ -44,7 +44,7 @@ export default function Question({ques, ans}: QuestionProps) {
   return (
     <div
       ref={questionRef}
-      className={`border rounded-lg sm:w-[80%] w-[100%] ${
+      className={`border rounded-lg lg:w-[80%] w-[100%] ${
         isOpen ? "bg-[#5F2EEA] border-[#5F2EEA]" : ""
       }`}
     >
