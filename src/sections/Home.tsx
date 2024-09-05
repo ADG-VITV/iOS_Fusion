@@ -15,7 +15,7 @@ export default function Home() {
           </p>
           <div className="flex my-8 mx-0 z-10">
             <button className="w-[12rem] h-[2.5rem] shadow-md bg-[#5F2EEA] border-0 rounded-full mr-4 z-10">
-              <a target="_blank" href="https://gravitas.vit.ac.in">REGISTER</a>
+              <a target="_blank" href="https://gravitas.vit.ac.in/events/af543ff7-0bd3-476f-ad5d-e37805869d2c">REGISTER</a>
             </button>
             <button className="w-[12rem] h-[2.5rem] shadow-md border rounded-full mr-4 z-10">
               <a target="_blank" href="https://instagram.com/adgvit">REACH OUT</a>

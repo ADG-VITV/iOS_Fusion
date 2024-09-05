@@ -4,7 +4,7 @@ import Event from "@/components/Event";
 import Slider from "@mui/material/Slider";
 
 export default function Timeline() {
-  const [range, setRange] = useState<number>(0);
+  const [range, setRange] = useState<number>(100);
 
   const getBackgroundColor = (index: number): string => {
     if (range < 33.33 && index === 3) return "bg-[#5C4AC8]";
@@ -67,7 +67,25 @@ export default function Timeline() {
           </div>
           <div className="flex w-full justify-between lg:justify-evenly">
             <h1>DAY 2</h1>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 mb-5">
+              <Event
+                key={2}
+                onClick={() => handleClick(1)}
+                className={`flex flex-col ${getBackgroundColor(2)}`}
+                event="EVENT 3 : LIVE WORKSHOP"
+                time="WILL BE ANNOUNCED SOON"
+                venue="WILL BE ANNOUNCED SOON"
+              />
+              <Event
+                key={3}
+                onClick={() => handleClick(0)}
+                className={`flex flex-col ${getBackgroundColor(3)}`}
+                event="EVENT 4 : APPATHON"
+                time="WILL BE ANNOUNCED SOON"
+                venue="WILL BE ANNOUNCED SOON"
+              />
+            </div>
+            {/* <div className="flex flex-col gap-4">
               <Event
                 key={2}
                 onClick={() => handleClick(1)}
@@ -84,7 +102,7 @@ export default function Timeline() {
                 time="WILL BE ANNOUNCED SOON"
                 venue="WILL BE ANNOUNCED SOON"
               />
-            </div>
+            </div> */}
             <div className="h-full flex justify-center items-center absolute top-0 left-[18%] lg:left-[35%] rotate-0">
               <Slider
                 value={range}

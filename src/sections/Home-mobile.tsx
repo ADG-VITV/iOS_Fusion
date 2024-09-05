@@ -10,7 +10,7 @@ export default function Home() {
           <nav className="flex justify-between">
             <Image
               className="w-[6rem]"
-              src="/adglogo.png"
+              src="/IOSF.svg"
               width={500}
               height={500}
               alt="Landing page"
@@ -27,7 +27,7 @@ export default function Home() {
             </p>
             <div className="flex my-4 mx-0 z-10 text-xs">
               <button className="w-[10rem] h-[2rem] shadow-md bg-[#5F2EEA] border-0 rounded-full mr-4">
-              <a target="_blank" href="https://gravitas.vit.ac.in">REGISTER</a>
+              <a target="_blank" href="https://gravitas.vit.ac.in/events/af543ff7-0bd3-476f-ad5d-e37805869d2c">REGISTER</a>
                 
               </button>
               <button className="w-[10rem] h-[2rem] shadow-md border rounded-full mr-4">
