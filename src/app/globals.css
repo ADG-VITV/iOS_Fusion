@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add these styles to your globals.css */
+
+.iphone-container {
+  position: relative;
+  display: inline-block;
+}
+
+.iphone-smoke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.3), rgba(255, 0, 255, 0.3), rgba(0, 255, 255, 0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  mix-blend-mode: screen;
+}
+
+.iphone-container:hover .iphone-smoke {
+  opacity: 1;
+  animation: smoke-animation 1.5s infinite;
+}
+
+@keyframes smoke-animation {
+  0% {
+    transform: translateY(0) scaleX(1) scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%) scaleX(1.5) scaleY(1.5);
+    opacity: 0;
+  }
+}

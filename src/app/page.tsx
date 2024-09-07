@@ -10,6 +10,7 @@ import Footer from "@/sections/Footer";
 import ScrollTop from "@/components/ScrollTop";
 
 export default function Home() {
+
   return (
     <>
       <div className="hidden md:block">

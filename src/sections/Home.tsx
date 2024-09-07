@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import CountdownTimer from "@/components/Countdown";
-
+import Iphone from "@/components/Iphone";
+import ADG from "@/components/ADG";
 export default function Home() {
   return (
     <div className="flex">
@@ -21,28 +22,14 @@ export default function Home() {
               <a target="_blank" href="https://instagram.com/adgvit">REACH OUT</a>
             </button>
           </div>
-          <div className="absolute left-0 bottom-0 m-0 p-0  h-[16.5rem]">
-            <Image
-              className="object-cover w-full h-full"
-              src="/ADG.png"
-              alt="ADG"
-              width={500}
-              height={500}
-            />
-          </div>
+          <ADG/>
           <div className="">
             <CountdownTimer targetDate="2024-09-27T08:00:00" />
           </div>
         </div>
       </div>
       <div className="w-[30%] h-[100vh] flex justify-center items-center bg-[#5F2EEA]">
-        <Image
-          className="w-[60%] "
-          src="/image.png"
-          alt="iphone"
-          width={500}
-          height={500}
-        />
+        <Iphone />
       </div>
     </div>
   );

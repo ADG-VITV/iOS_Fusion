@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={archivo.className}>{children}</body>
+      <body className={archivo.className}>
+        {children}
+        </body>
     </html>
   );
 }

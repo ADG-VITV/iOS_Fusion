@@ -85,24 +85,6 @@ export default function Timeline() {
                 venue="WILL BE ANNOUNCED SOON"
               />
             </div>
-            {/* <div className="flex flex-col gap-4">
-              <Event
-                key={2}
-                onClick={() => handleClick(1)}
-                className={`flex flex-col ${getBackgroundColor(2)}`}
-                event="EVENT 3 : HANDS ON WORKSHOP"
-                time="WILL BE ANNOUNCED SOON"
-                venue="WILL BE ANNOUNCED SOON"
-              />
-              <Event
-                key={3}
-                onClick={() => handleClick(0)}
-                className={`flex flex-col ${getBackgroundColor(3)}`}
-                event="EVENT 4 : APPATHON"
-                time="WILL BE ANNOUNCED SOON"
-                venue="WILL BE ANNOUNCED SOON"
-              />
-            </div> */}
             <div className="h-full flex justify-center items-center absolute top-0 left-[18%] lg:left-[35%] rotate-0">
               <Slider
                 value={range}
