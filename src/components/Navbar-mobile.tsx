@@ -41,19 +41,19 @@ export default function NavbarMobile() {
   }, [isMenuOpen]);
 
   return (
-    <div className="relative">
+    <div className="relative custom-font">
       <button onClick={handleClick}>
         <IoReorderThreeOutline className="text-white text-4xl" />
       </button>
       <div
         ref={menuRef}
-        className={`fixed right-0 w-[50vw] h-full z-30 top-0 bg-[#5F2EEA] text-white text-xl transition-all ease-in-out duration-300 transform ${
+        className={`fixed right-0 w-[50vw] h-full z-30 top-0 bg-[#5F2EEA] text-white text-lg transition-all ease-in-out duration-300 transform ${
           isMenuOpen && isAnimating
             ? "translate-x-0 opacity-100"
             : "translate-x-full opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col gap-3 justify-center w-full px-6 py-6 ">
+        <div className="flex flex-col gap-3 justify-center w-full px-4 py-4 ">
           <a href="#" className="p-2" onClick={handleLinkClick}>
             HOME
           </a>
