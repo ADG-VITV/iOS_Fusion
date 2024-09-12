@@ -21,7 +21,7 @@ export default function Home() {
             limits of iOS technology and unlocking a world of possibilities.
           </p>
           <div className="flex my-8 mx-0 z-10">
-            <button className="w-[12rem] h-[2.5rem] shadow-md bg-[#5F2EEA] border-0 rounded-full mr-4 z-10">
+            <button className="w-[12rem] text-lg h-[2.5rem] shadow-md bg-[#5F2EEA] border-0 rounded-full mr-4 z-10">
               <a
                 target="_blank"
                 href="https://gravitas.vit.ac.in/events/af543ff7-0bd3-476f-ad5d-e37805869d2c"
@@ -29,7 +29,7 @@ export default function Home() {
                 REGISTER
               </a>
             </button>
-            <button className="w-[12rem] h-[2.5rem] shadow-md border rounded-full mr-4 z-10">
+            <button className="w-[12rem] text-lg h-[2.5rem] shadow-md border rounded-full mr-4 z-10">
               <a target="_blank" href={whatsappURL}>
                 REACH OUT
               </a>
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <ADG />
           <div className="">
-            <CountdownTimer targetDate="2024-09-27T08:00:00" />
+            <CountdownTimer targetDate="2024-09-27T10:00:00" />
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function FAQ() {
       className=" bg-black text-white md:px-32 md:py-20 h-full p-6 sm:p-10"
     >
       <h1 className="text-5xl font-bold m-4">FAQ</h1>
-      <div className="flex flex-col gap-8 m-4">
+      <div className="flex flex-col gap-8 m-4 ">
         <Question
           ques="Who can participate in iOSFusion?"
           ans="The event is open to all students of VIT."
