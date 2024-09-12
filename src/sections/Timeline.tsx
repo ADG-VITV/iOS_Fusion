@@ -52,16 +52,16 @@ export default function Timeline() {
                 onClick={() => handleClick(3)}
                 className={`flex flex-col ${getBackgroundColor(0)}`}
                 event="EVENT 1 : INTRODUCTION"
-                time="10:00AM - 11:00AM"
-                venue="SMART CLASSROOM"
+                time="WILL BE ANNOUNCED SOON"
+                venue="WILL BE ANNOUNCED SOON"
               />
               <Event
                 key={1}
                 onClick={() => handleClick(2)}
                 className={`flex flex-col ${getBackgroundColor(1)}`}
                 event="EVENT 2 : GUEST SPEAKER"
-                time="11:00AM - 12:30PM"
-                venue="SMART CLASSROOM"
+                time="WILL BE ANNOUNCED SOON"
+                venue="WILL BE ANNOUNCED SOON"
               />
             </div>
           </div>
@@ -73,16 +73,16 @@ export default function Timeline() {
                 onClick={() => handleClick(1)}
                 className={`flex flex-col ${getBackgroundColor(2)}`}
                 event="EVENT 3 : LIVE WORKSHOP"
-                time="01:00PM - 07:30PM"
-                venue="SMART CLASSROOM"
+                time="WILL BE ANNOUNCED SOON"
+                venue="WILL BE ANNOUNCED SOON"
               />
               <Event
                 key={3}
                 onClick={() => handleClick(0)}
                 className={`flex flex-col ${getBackgroundColor(3)}`}
                 event="EVENT 4 : APPATHON"
-                time="08:00PM - 01:00AM"
-                venue="SMART CLASSROOM"
+                time="WILL BE ANNOUNCED SOON"
+                venue="WILL BE ANNOUNCED SOON"
               />
             </div>
             <div className="h-full flex justify-center items-center absolute top-0 left-[18%] lg:left-[35%] rotate-0">
