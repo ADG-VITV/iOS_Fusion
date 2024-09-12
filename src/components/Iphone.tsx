@@ -24,7 +24,7 @@ export default function Iphone() {
         ref={canvas}
         style={{ width: "20%", height: "28rem" }}
       ></canvas>
-      {/* <Image src="/image.png" alt="iphone" width={500} height={500} /> */}
+      
     </div>
   );
 }
