@@ -1,39 +1,18 @@
+/* styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Add these styles to your globals.css */
-
-.iphone-container {
-  position: relative;
-  display: inline-block;
+@font-face {
+   font-family: "Monument Extended Ultralight";
+    src: url("https://db.onlinewebfonts.com/t/9b310b2d91dfaf3b73ac6ea66c8351b2.eot");
+    src: url("https://db.onlinewebfonts.com/t/9b310b2d91dfaf3b73ac6ea66c8351b2.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9b310b2d91dfaf3b73ac6ea66c8351b2.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9b310b2d91dfaf3b73ac6ea66c8351b2.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9b310b2d91dfaf3b73ac6ea66c8351b2.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9b310b2d91dfaf3b73ac6ea66c8351b2.svg#Monument Extended Ultralight")format("svg");
 }
 
-.iphone-smoke {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background: radial-gradient(circle, rgba(255, 0, 0, 0.3), rgba(255, 0, 255, 0.3), rgba(0, 255, 255, 0.3));
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  mix-blend-mode: screen;
-}
-
-.iphone-container:hover .iphone-smoke {
-  opacity: 1;
-  animation: smoke-animation 1.5s infinite;
-}
-
-@keyframes smoke-animation {
-  0% {
-    transform: translateY(0) scaleX(1) scaleY(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100%) scaleX(1.5) scaleY(1.5);
-    opacity: 0;
-  }
+.custom-font {
+  font-family: "Monument Extended Ultralight";
 }

@@ -6,7 +6,7 @@ export default function Speakers() {
       <div className="flex justify-between w-[90%] mx-auto my-8 gap-16 md:flex-row flex-col-reverse">
         <div className="flex sm:gap-8 items-center gap-2">
           <div className="flex flex-col text-right">
-          <h1 className="text-5xl my-2" >Faiz ulla Sharief</h1>
+          <h1 className="text-4xl sm:text-5xl my-2" >Faiz ulla Sharief</h1>
           <p className="text-[1rem]">
             iOS Engineer at Apple
           </p>
@@ -29,7 +29,7 @@ export default function Speakers() {
           />
           <div>
 
-          <h1 className="text-5xl my-2">Farheen Ahmad</h1>
+          <h1 className="text-4xl sm:text-5xl my-2">Farheen Ahmad</h1>
           <p className="text-[1rem]">
             Founder and CEO of Interality.ai
           </p>
