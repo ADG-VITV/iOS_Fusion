@@ -28,9 +28,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[30%] h-[100vh] flex justify-center items-center bg-[#5F2EEA]">
+      {/* <div className="w-[30%] h-[100vh] flex justify-center items-center bg-[#5F2EEA]">
         <Iphone />
-      </div>
+      </div> */}
     </div>
   );
 }
