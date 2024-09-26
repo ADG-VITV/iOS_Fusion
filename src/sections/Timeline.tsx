@@ -7,6 +7,7 @@ export default function Timeline() {
   const [range, setRange] = useState<number>(100);
 
   const getBackgroundColor = (index: number): string => {
+
     if (range < 33.33 && index === 3) return "bg-[#5C4AC8]";
     if (range >= 33.33 && range < 66.66 && index === 2) return "bg-[#5C4AC8]";
     if (range >= 66.66 && range <= 99.99 && index === 1) return "bg-[#5C4AC8]";
@@ -39,10 +40,10 @@ export default function Timeline() {
   return (
     <section
       id="timeline"
-      className="px-6 py-8 lg:px-32 lg:py-16 bg-black text-white"
+      className="px-6 py-8 lg:px-32 lg:py-16 bg-black text-white" 
     >
       <h1 className="text-3xl lg:text-5xl font-bold lg:m-4">TIMELINE</h1>
-      <div className="flex lg:mx-auto h-full">
+      <div className="flex lg:mx-auto h-full" contentEditable={false}>
         <div className="flex flex-col w-full text-2xl lg:text-5xl gap-8 my-12 items-center font-bold relative">
           <div className="flex w-full justify-between lg:justify-evenly">
             <h1>DAY 1</h1>
@@ -51,18 +52,19 @@ export default function Timeline() {
                 key={0}
                 onClick={() => handleClick(3)}
                 className={`flex flex-col ${getBackgroundColor(0)}`}
-                event="EVENT 1 : INTRODUCTION"
-                time="WILL BE ANNOUNCED SOON"
-                venue="WILL BE ANNOUNCED SOON"
-              />
+                event="INTRODUCTION AND SPEAKER SESSION"
+                time="11:00 AM - 12:00 PM"
+                venue="SMV - 209"
+              />  
               <Event
                 key={1}
                 onClick={() => handleClick(2)}
                 className={`flex flex-col ${getBackgroundColor(1)}`}
-                event="EVENT 2 : GUEST SPEAKER"
-                time="WILL BE ANNOUNCED SOON"
-                venue="WILL BE ANNOUNCED SOON"
+                event="HANDS ON WORKSHOP"
+                time="12:00 PM - 11:00 PM"
+                venue="Workshop begins, Speaker Session-2, Breaks"
               />
+               
             </div>
           </div>
           <div className="flex w-full justify-between lg:justify-evenly">
@@ -72,17 +74,17 @@ export default function Timeline() {
                 key={2}
                 onClick={() => handleClick(1)}
                 className={`flex flex-col ${getBackgroundColor(2)}`}
-                event="EVENT 3 : LIVE WORKSHOP"
-                time="WILL BE ANNOUNCED SOON"
-                venue="WILL BE ANNOUNCED SOON"
+                event="APPATHON"
+                time="12:00 AM - 5:00 AM"  
+                venue=" Appathon, Reviews and Fun Games"
               />
               <Event
                 key={3}
                 onClick={() => handleClick(0)}
                 className={`flex flex-col ${getBackgroundColor(3)}`}
-                event="EVENT 4 : APPATHON"
-                time="WILL BE ANNOUNCED SOON"
-                venue="WILL BE ANNOUNCED SOON"
+                event="FINAL REVIEW AND CLOSING CEREMONY"
+                time=" 9:30AM - 2:00 PM"
+                venue="MGB 303, 304"
               />
             </div>
             <div className="h-full flex justify-center items-center absolute top-0 left-[18%] lg:left-[35%] rotate-0">
